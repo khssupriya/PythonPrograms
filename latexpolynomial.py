@@ -1,5 +1,5 @@
 def pre_process(polynomial):
-    return polynomial.strip("$").replace("+ ","+").replace("- ","-")
+    return polynomial.strip("$").replace(" ","").replace("+"," +").replace("-"," -")
 
 def mathematician_latex_polynomial(polynomial: str)->str:
     polynomial = pre_process(polynomial)
@@ -13,7 +13,7 @@ def mathematician_latex_polynomial(polynomial: str)->str:
     if mathematician_polynomial[0] == "+":
         mathematician_polynomial = mathematician_polynomial[1:]
 
-    return  "$" + mathematician_polynomial[:-1] + "$"
+    return  "$" + mathematician_polynomial + "$"
 
-print(mathematician_latex_polynomial("$3x^4 -7x^3 +21x +17$"))
+print(mathematician_latex_polynomial("$3x^4 -  7x^3 +21x +17$"))
 print(mathematician_latex_polynomial("$3x^4 - 7x^3 + 21x +17$"))

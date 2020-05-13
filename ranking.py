@@ -86,10 +86,10 @@ partial_ranked = partial_ranked.replace(">$>","\n")
 print("FINAL RESULT\n", partial_ranked)
 
 
-# with open("vanchi.dot", "w") as f:
-#     print("digraph vanchi {", file=f)
-#     for relation in minimal:
-#         print("\t%s -> %s;" %(relation[0], relation[1]), file=f)
-#     print("}", file=f)
+with open("vanchi.dot", "w") as f:
+    print("digraph vanchi {", file=f)
+    for relation in minimal:
+        print("\t%s -> %s;" %(relation[0], relation[1]), file=f)
+    print("}", file=f)
 
-# os.system("dot -T png -o vanchi.png vanchi.dot")
+os.system("dot -T png -o vanchi.png vanchi.dot")

@@ -1,0 +1,31 @@
+strict digraph odometerflow{
+	node [shape=box color=black style=filled]
+	// "Start" [shape = circle fillcolor=antiquewhite]
+	// "Stop" [shape = circle fillcolor=antiquewhite]
+	"Take Input Length" [shape=parallelogram fillcolor=turquoise1]
+	startlimit [label = "Set the START \nand LIMIT readings" fillcolor=aquamarine1]
+	nthnext [label = "Find Nth \nNext reading" fillcolor=darkslategray2]
+	next [label = "Find next\n reading" fillcolor=darkslategray1]
+	dist [label = "Find distance \nbetween readings" fillcolor=darkslategray2]
+	prev [label = "Find prev\n reading" fillcolor=darkslategray1]
+	nthprev [label = "Find Nth \nPrev reading" fillcolor=darkslategray2]
+
+	{rank = same; next; nthnext;}
+	{rank = same; prev; nthprev;}
+
+	"Take Input Length" -> startlimit
+	startlimit ->  nthnext
+	startlimit ->  next
+	startlimit ->  dist 
+	startlimit -> prev
+	startlimit -> nthprev 
+
+    nthnext -> next [label="N times"]
+	nthprev -> prev [label="N times"]
+
+	// nthprev -> "Stop"
+	// nthnext -> "Stop"
+	// next -> "Stop"
+	// dist -> "Stop"
+	// prev -> "Stop"
+}

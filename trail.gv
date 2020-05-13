@@ -1,0 +1,14 @@
+graph trail{
+	Supriya [shape=box];
+	Supriya -- youtuber
+	Supriya -- programmer
+	programmer -- developer
+	programmer -- CP
+	CP -- "Code Chef" [color=red];
+	CP -- "Code Forces"[style=bold,label="Love it"];
+	CP -- "Hacker Rank"
+	developer -- web
+	web [shape=circle,style=filled,color=".7 .3 1.0"];
+	developer -- Mobile
+	Supriya -- Bolgger [style=dotted]
+}

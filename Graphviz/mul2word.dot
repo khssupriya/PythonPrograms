@@ -1,0 +1,14 @@
+digraph mul2words{
+	node [style=filled color=black];
+	a [label="Multiple" shape=box fillcolor=wheat1]
+	b [shape = Mdiamond label = "<20" fillcolor=salmon]
+	c [shape = Mdiamond label = "<100" fillcolor=wheat1]
+	d [shape=box label = "UPTO_20[Multiple]" fillcolor=wheat1]
+	e [shape=box label = "TENS[X] + UPTO_20[Y]" fillcolor=salmon]
+	f [shape=box label = "UPTO_20[X] + \"Hundred\"\n+ TENS[Y] + UPTO_20[Z]" fillcolor=salmon]
+	a -> b;
+	b -> d [label = "True"]
+	b -> c [label = "False"]
+	c -> e [label = "True"]
+	c -> f [label="False"]
+}

@@ -1,0 +1,10 @@
+digraph fig2wordsflow{
+	node [shape=box color=black style=filled]
+	A [label = "Take Input Number" fillcolor=cornsilk1]
+	B [label = "Split into \ndenominations-multiples list" fillcolor= cyan]
+	c [label = "Covert denominations \nto words" fillcolor=cornsilk1]
+	d [label = "Convert Multiples \nto words" fillcolor= cyan]
+	e [label = "Join the individual \ndenomiantions-multiple \npairs in the list" fillcolor=cornsilk1]
+	f [label = "Print the \njoined result" fillcolor= cyan]
+	A -> B -> c -> d -> e -> f; 
+}

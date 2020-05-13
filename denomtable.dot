@@ -1,0 +1,20 @@
+digraph html {
+abc [shape=none, margin=0, label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR>
+	<TD BGCOLOR="lightgrey">NUMBER</TD>
+	<TD BGCOLOR="beige">10000000</TD>
+	<TD BGCOLOR="lightgrey">100000</TD>
+	<TD BGCOLOR="beige">1000</TD>
+	<TD BGCOLOR="lightgrey">1</TD>
+</TR>
+<TR>
+	<TD BGCOLOR="beige">WORD</TD>
+	<TD BGCOLOR="lightgrey">Crore</TD>
+	<TD BGCOLOR="beige">Lakh</TD>
+	<TD BGCOLOR="lightgrey">Thousand</TD>
+	<TD BGCOLOR="beige">(NULL)</TD>
+</TR>
+
+</TABLE>>];
+}

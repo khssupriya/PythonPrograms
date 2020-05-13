@@ -1,0 +1,12 @@
+digraph trail{
+	Supriya -> youtuber
+	Supriya -> programmer
+	programmer -> developer
+	programmer -> CP
+	CP -> "Code Chef"
+	CP -> "Code Forces"
+	CP -> "Hacker Rank"
+	developer -> Web
+	developer -> Mobile
+	Supriya -> Bolgger
+}
